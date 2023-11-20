@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de SIC</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="style.css"/>
+    <script id="applicationScript" type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Sistema Asistido de Pertinencia</h1>
+    <div class="nav-botones">
+        <button class="nav-opcion">Opcion1</button>
+        <button class="nav-opcion">Opcion2</button>
+        <button class="nav-opcion">Opcion3</button>
+        <button class="nav-opcion">Opcion4</button>
+    </div>
+</header>
+
+<div class="content-container">
+    <div class="formulario-escaneado">
+        <div class="seleccion-archivo">
+            <input type="file" name="archivoSICsubido">
+        </div>
+    </div>
+
+    <div class="datos-confirmacion-derecha">
+        <div class="pasos-digitador">
+            <div class="paso-left"></div>
+            <div class="paso-medio-highlight"></div>
+            <div class="paso-medio"></div>
+            <div class="paso-medio"></div>
+            <div class="paso-right"></div>
+        </div>
+        <h3 style="color: var(--negro); margin-top: -20px;">2. Carga de documento</h3>
+        <div class="instruccion">Por favor, cargue el documento correspondiente a la SIC en un formato admitido. (PDF).</div>
+        <button type="submit" class="boton-estandar" onclick="evaluarArchivo()">CARGAR ARCHIVO</button>
+        <div id="success-message" class="instruccion" style="display: none;">El archivo es correcto. Procediendo a la verificación manual.</div>
+    </div>
+</div>
+</body>
+</html>

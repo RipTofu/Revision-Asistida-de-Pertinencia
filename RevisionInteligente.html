@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Revisión Inteligente de SIC</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="style.css"/>
+    <script id="applicationScript" type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Sistema Asistido de Pertinencia</h1>
+        <div class="nav-botones">
+            <button class="nav-opcion">Opcion1</button>
+            <button class="nav-opcion">Opcion2</button>
+            <button class="nav-opcion">Opcion3</button>
+            <button class="nav-opcion">Opcion4</button>
+        </div>
+    </header>
+
+    <!--Cosas del formulario. Completar con algún ejemplo. -->
+    <div class="content-container">
+        <div class=formulario-escaneado">
+            <h2 style="left: 60px;">Solicitud de Interconsulta</h2>
+            <h3 style="left: 60px;">Datos del (de la) paciente</h3>
+            <div class="datos-formulario-escaneado">
+                <div class="info-label">
+                    <p>PRIMER APELLIDO</p>
+                    <p class="elemento-revisado">Lemebel</p>
+                </div>
+                <div class="info-label">
+                    <p>SEGUNDO APELLIDO</p>
+                    <p class="elemento-revisado">Other stuff!</p>
+                </div>
+                <div class="info-label">
+                    <p>NOMBRES</p>
+                    <p class="elemento-revisado">test!</p>
+                </div>
+                <div class="info-label">
+                    <p>EDAD</p>
+                    <p class="elemento-revisado">test!</p>
+                </div>
+                <div class="info-label">
+                    <p>SEXO</p>
+                    <p class="elemento-revisado">test!</p>
+                </div>
+                <div class="info-label">
+                    <p>NUMERO DE FICHA</p>
+                    <p class="elemento-revisado">test!</p>
+                </div>
+            </div>
+            <h3 style="left: 60px;">Datos clínicos</h3>
+            <div class="datos-formulario-escaneado">
+                <div class="info-label">
+                    <p>Se deriva a especialidad</p>
+                    <p class="elemento-revisado">Otorrinolaringología</p>
+                </div>
+                <div class="info-label">
+                    <p>SE ENVIA A CONSULTA PARA</p>
+                    <p class="elemento-revisado">Confirmación <span class="highlighted-text">diagnóstica</span>.</p>
+                </div>
+                <div class="info-label">
+                    <p>NOMBRES</p>
+                    <p class="elemento-revisado">test!</p>
+                </div>
+                <div class="info-label">
+                    <p>EDAD</p>
+                    <p class="elemento-revisado">test!</p>
+                </div>
+                <div class="info-label">
+                    <p>SEXO</p>
+                    <p class="elemento-revisado-box">Usuaria refiere presentar disminución de audición de larga data. Esto ha afectado su calidad de vida. Además, en espera de evaluación por parálisis de cuerdas vocales. Solicito evaluar.</p>
+                </div>
+                <div class="info-label">
+                    <p>NUMERO DE FICHA</p>
+                    <p class="elemento-revisado">test!</p>
+                </div>
+            </div>
+        </div>
+        <div class="datos-confirmacion-derecha">
+            <div class="instruccion" style="var(--negro)">El análisis inteligente sugiere que la probabilidad de que la solicitud sea pertinente es de un:</div>
+            <div class="porcentaje-pertinencia">90%</div>
+            <div class="instruccion">Por favor, revise la solicitud y determine si es pertinente.</div>
+
+            <!--Notificacion-->
+            <form action="sistema_de_notificacion.php" method="post">
+                <div class="radio-container">
+                    <input type="radio" name="radial-button" class="boton-radial" id="pertinente" value="Pertinente">
+                    <label for="pertinente" class="radio-label">Pertinente</label>
+                </div>
+
+                <div class="radio-container">
+                    <input type="radio" name="radial-button" class="boton-radial" id="no-pertinente" value="No Pertinente">
+                    <label for="no-pertinente" class="radio-label">No Pertinente</label>
+                </div>
+
+                <button type="submit" class="boton-estandar">CONFIRMAR SELECCION</button>
+            </form>
+
+
+        </div>
+    </div>
+
+    <!--Cosas informativas. Yeah.-->
+
+
+</body>
+</html>

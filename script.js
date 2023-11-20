@@ -1,4 +1,4 @@
-console.log("script cargado.")
+console.log("Mira papá, aprendí JavaScript en tres días :)")
 //Para recibir información del formulario.
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form');
@@ -23,32 +23,55 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function () {
     const formularioEscaneado = document.querySelector(".formulario-escaneado");
     const circuloDeProgreso = document.querySelector(".circulo-de-progreso");
-
-    // Update the progress based on the number of filled fields
     function updateProgress() {
+        console.log('updateProgress function called');
         const totalFields = document.querySelectorAll('.elemento-formulario:required').length;
         const filledFields = document.querySelectorAll('.elemento-formulario:required:valid').length;
+        console.log('Filled Fields:', filledFields);
+        console.log('Total Fields:', totalFields);
         const percentage = (filledFields / totalFields) * 100;
 
-        // Update the --progress variable and content
         circuloDeProgreso.style.setProperty('--progress', percentage + '%');
-        //Update Data-progress
         circuloDeProgreso.setAttribute('data-progress', `${Math.round(percentage)}%`);
 
-        // Update the conic-gradient with the calculated percentage
         const gradientValue = `
             radial-gradient(closest-side, var(--celeste) 95%, transparent 80%),
             conic-gradient(var(--verdosoOscuro) ${percentage}%, var(--celeste) 0)`;
         circuloDeProgreso.style.background = gradientValue;
 
-        // Color segun porcentaje
-        const color = calculateColor(percentage);
-        circuloDeProgreso.style.borderColor = color;
+        //Para la cantidad de campos completados. Se actualizan los campos totales cada frame también, qué tanto.
+        document.getElementById("camposCompletados").innerHTML = `Campos completados: ${filledFields}/${totalFields}`;
+
     }
 
-    // Attach the updateProgress function to the form's input events
     formularioEscaneado.addEventListener("input", updateProgress);
 
-    // Initial update when the DOM is loaded
     updateProgress();
 });
+
+
+function evaluarArchivo() {
+    var fileInput = document.querySelector('input[type="file"]');
+
+    if (fileInput.files.length > 0) {
+        var file = fileInput.files[0];
+
+        if (file.type === 'application/pdf') {
+            if (!tieneContrasena(file)) {
+                document.getElementById('success-message').style.display = 'block';
+                setTimeout(function () {
+                    window.location.href = 'VerificacionManual.html';
+                }, 3000);
+
+                return;
+            }
+        }
+    }
+    alert('Please upload a valid PDF file without a password.');
+}
+
+function tieneContrasena(file) {
+    /* Se asume aquí que el archivo no tiene contraseña. La otra solución es meter una librería pesadísima.
+        Lo arreglaré, pero no ahora. Valoro mi salud mental :) */
+    return false;
+}

@@ -151,13 +151,13 @@ label {
 	opacity: 1;
 }
 
-.form-field {
+.info-label {
 	width: calc(33.33% - 20px);
 	box-sizing: border-box;
 	margin-bottom: 20px;
 }
 
-.datos-confirmacion-datos-escaneados {
+.datos-confirmacion-derecha {
 	position: fixed;
 	right: 0;
 	width: 35%;
@@ -252,4 +252,118 @@ label {
 	background: var(--azuladoMedio) 0 0% no-repeat padding-box;
 	border-radius: 4px;
 	opacity: 1;
+}
+
+.datos-revision-inteligente {
+	top: 247px;
+	left: 163px;
+	margin-left: 60px;
+	min-height: 201px;
+	width: 1047px;
+	height: auto;
+	background-color: var(--blanco);
+	flex-direction: row;
+	justify-content: space-between;
+	opacity: 1;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.elemento-revisado {
+	position: relative;
+	color: var(--verdosoOscuro);
+	font: var(--texto-interior);
+	text-align: left;
+	letter-spacing: 0;
+	opacity: 1;
+}
+
+.elemento-revisado::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--celeste);
+}
+
+.elemento-revisado-box {
+	background: var(--blanco) 0 0% no-repeat padding-box;
+	border: 3px solid var(--celeste);
+	opacity: 1;
+	position: relative;
+	color: var(--verdosoOscuro);
+	font: var(--texto-interior);
+	text-align: left;
+	letter-spacing: 0;
+	padding: 10px;
+}
+
+.highlighted-text {
+	background-color: var(--highlight);
+}
+
+.porcentaje-pertinencia {
+	width: 188px;
+	height: 90px;
+	/* UI Properties */
+	color: var(--verdosoOscuro);
+	text-align: left;
+	font: normal normal normal 90px/126px var(--big-stuff);
+	letter-spacing: 4px;
+	opacity: 1;
+}
+
+.boton-radial{
+	width: 30px;
+	height: 30px;
+	/* UI Properties */
+	border: 2px solid var(--verdosoOscuro);
+	border-radius: 20px;
+	opacity: 1;
+}
+
+.boton-radial:checked {
+	width: 30px;
+	height: 30px;
+	border: 10px solid var(--verdosoOscuro);
+	border-radius: 20px;
+	opacity: 1;
+}
+
+.radio-container {
+	display: flex;
+	align-items: self-start;
+	margin-bottom: 10px; /* Adjust as needed */
+}
+
+.seleccion-archivo {
+	display: inline-block;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 50%;
+	left: 25%;
+	position: absolute;
+
+}
+
+
+input[type=file]::file-selector-button {
+	margin-right: 20px;
+	border: 2px;
+	background: var(--azuladoMedio);
+	padding: 20px 40px;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	transition: background .2s ease-in-out;
+	font-size: 24px;
+}
+
+
+input[type=file]::file-selector-button:hover {
+	background: var(--highlight);
 }

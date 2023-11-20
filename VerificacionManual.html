@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Web 1920 – 1</title>
+	<title>Verificación de SIC</title>
 	<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="style.css"/>
 	<script id="applicationScript" type="text/javascript" src="script.js"></script>
 </head>
@@ -18,35 +18,36 @@
 			<button class="nav-opcion">Opcion4</button>
 		</div>
 	</header>
+
 	<div class="content-container">
 		<form action="" method="get" class="formulario-escaneado">
 			<h2 style="left: 60px;">Solicitud de Interconsulta</h2>
 			<h3 style="left: 60px;">Datos Básicos</h3>
 			<div class="datos-formulario-escaneado">
 
-				<div class="form-field">
+				<div class="info-label">
 					<label for="folio">FOLIO</label>
 					<input required type="text" id="folio" class="elemento-formulario" placeholder="9650459604">
 				</div>
 
-				<div class="form-field">
+				<div class="info-label">
 					<label for="orden">NUMERO DE ORDEN</label>
 					<input required type="text" id="orden" class="elemento-formulario" placeholder="432869205839">
 				</div>
 
-				<div class="form-field">
+				<div class="info-label">
 					<label for="numFicha">NUMERO DE FICHA</label>
 					<input required type="text" id="numFicha" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="servicio">SERVICIO DE SALUD</label>
 					<input required type="text" id="servicio" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="establecimiento">ESTABLECIMIENTO</label>
 					<input required type="text" id="establecimiento" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="fechaSolicitud">FECHA DE SOLICITUD</label>
 					<input required type="text" id="fechaSolicitud" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
@@ -54,57 +55,57 @@
 			<h3 style="left: 60px;">Datos del (de la) paciente</h3>
 			<div class="datos-formulario-escaneado">
 
-				<div class="form-field">
+				<div class="info-label">
 					<label for="primerApellido">PRIMER APELLIDO</label>
 					<input required type="text" id="primerApellido" class="elemento-formulario" placeholder="9650459604">
 				</div>
 
-				<div class="form-field">
+				<div class="info-label">
 					<label for="segundoApellido">SEGUNDO APELLIDO</label>
 					<input required type="text" id="segundoApellido" class="elemento-formulario" placeholder="432869205839">
 				</div>
 
-				<div class="form-field">
+				<div class="info-label">
 					<label for="nombres">NOMBRES</label>
 					<input required type="text" id="nombres" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="run">RUN</label>
 					<input required type="text" id="run" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="sexo">SEXO</label>
 					<input required type="text" id="sexo" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="fechaNacimiento">FECHA DE NACIMIENTO</label>
 					<input required type="text" id="fechaNacimiento" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="edad">EDAD</label>
 					<input required type="text" id="edad" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="domicilio">DOMICILIO</label>
 					<input required type="text" id="domicilio" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="correo">CORREO ELECTRONICO</label>
 					<input required type="text" id="correo" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="comunaResidencia">COMUNA DE RESIDENCIA</label>
 					<input required type="text" id="comunaResidencia" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="telefonoMovil">TELEFONO MOVIL</label>
 					<input required type="text" id="telefonoMovil" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="nombrePadre">NOMBRE PADRE</label>
 					<input required type="text" id="nombrePadre" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
-				<div class="form-field">
+				<div class="info-label">
 					<label for="nombreMadre">NOMBRE MADRE</label>
 					<input required type="text" id="nombreMadre" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
 				</div>
@@ -113,7 +114,7 @@
 
 		</form>
 
-		<div class="datos-confirmacion-datos-escaneados">
+		<div class="datos-confirmacion-derecha">
 			<div class="pasos-digitador">
 				<div class="paso-left"></div>
 				<div class="paso-medio"></div>
@@ -127,11 +128,10 @@
 
 			</div>
 
-			<h2 style="var(--negro)">Campos completados: 35/36</h2>
-			<div class="instruccion">FECHA DE NACIMIENTO no pudo ser escaneado.</div>
+			<h2 style="var(--negro)" id="camposCompletados">Campos completados: 0/0</h2>
+			<div class="instruccion">Múltiples campos no pudieron ser escaneados. Por favor verificar.</div>
 			<button type="submit" class="boton-estandar">FINALIZAR</button>
 		</div>
 	</div>
-<script src="script.js"></script>
 </body>
 </html>
