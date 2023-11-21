@@ -9,129 +9,129 @@
 	<script id="applicationScript" type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<header>
-		<h1>Sistema Asistido de Pertinencia</h1>
-		<div class="nav-botones">
-			<button class="nav-opcion">Opcion1</button>
-			<button class="nav-opcion">Opcion2</button>
-			<button class="nav-opcion">Opcion3</button>
-			<button class="nav-opcion">Opcion4</button>
-		</div>
-	</header>
-
-	<div class="content-container">
-		<form action="" method="get" class="formulario-escaneado">
-			<h2 style="left: 60px;">Solicitud de Interconsulta</h2>
-			<h3 style="left: 60px;">Datos Básicos</h3>
-			<div class="datos-formulario-escaneado">
-
-				<div class="info-label">
-					<label for="folio">FOLIO</label>
-					<input required type="text" id="folio" class="elemento-formulario" placeholder="9650459604">
-				</div>
-
-				<div class="info-label">
-					<label for="orden">NUMERO DE ORDEN</label>
-					<input required type="text" id="orden" class="elemento-formulario" placeholder="432869205839">
-				</div>
-
-				<div class="info-label">
-					<label for="numFicha">NUMERO DE FICHA</label>
-					<input required type="text" id="numFicha" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="servicio">SERVICIO DE SALUD</label>
-					<input required type="text" id="servicio" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="establecimiento">ESTABLECIMIENTO</label>
-					<input required type="text" id="establecimiento" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="fechaSolicitud">FECHA DE SOLICITUD</label>
-					<input required type="text" id="fechaSolicitud" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-			</div>
-			<h3 style="left: 60px;">Datos del (de la) paciente</h3>
-			<div class="datos-formulario-escaneado">
-
-				<div class="info-label">
-					<label for="primerApellido">PRIMER APELLIDO</label>
-					<input required type="text" id="primerApellido" class="elemento-formulario" placeholder="9650459604">
-				</div>
-
-				<div class="info-label">
-					<label for="segundoApellido">SEGUNDO APELLIDO</label>
-					<input required type="text" id="segundoApellido" class="elemento-formulario" placeholder="432869205839">
-				</div>
-
-				<div class="info-label">
-					<label for="nombres">NOMBRES</label>
-					<input required type="text" id="nombres" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="run">RUN</label>
-					<input required type="text" id="run" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="sexo">SEXO</label>
-					<input required type="text" id="sexo" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="fechaNacimiento">FECHA DE NACIMIENTO</label>
-					<input required type="text" id="fechaNacimiento" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="edad">EDAD</label>
-					<input required type="text" id="edad" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="domicilio">DOMICILIO</label>
-					<input required type="text" id="domicilio" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="correo">CORREO ELECTRONICO</label>
-					<input required type="text" id="correo" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="comunaResidencia">COMUNA DE RESIDENCIA</label>
-					<input required type="text" id="comunaResidencia" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="telefonoMovil">TELEFONO MOVIL</label>
-					<input required type="text" id="telefonoMovil" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="nombrePadre">NOMBRE PADRE</label>
-					<input required type="text" id="nombrePadre" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-				<div class="info-label">
-					<label for="nombreMadre">NOMBRE MADRE</label>
-					<input required type="text" id="nombreMadre" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
-				</div>
-			</div>
-
-
-		</form>
-
-		<div class="datos-confirmacion-derecha">
-			<div class="pasos-digitador">
-				<div class="paso-left"></div>
-				<div class="paso-medio"></div>
-				<div class="paso-medio-highlight"></div>
-				<div class="paso-medio"></div>
-				<div class="paso-right"></div>
-			</div>
-			<h3 style="color: var(--negro); margin-top: -20px;">3. Confirmación de datos escaneado</h3>
-			<div class="instruccion">El documento se escaneó correctamente. Por favor, verifique que los datos registrados son correctos, y corrija los datos erróneos, antes de continuar.</div>
-			<div class="circulo-de-progreso" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-progress="0">
-
-			</div>
-
-			<h2 style="var(--negro)" id="camposCompletados">Campos completados: 0/0</h2>
-			<div class="instruccion">Múltiples campos no pudieron ser escaneados. Por favor verificar.</div>
-			<button type="submit" class="boton-estandar">FINALIZAR</button>
-		</div>
+<header>
+	<h1>Sistema Asistido de Pertinencia</h1>
+	<div class="nav-botones">
+		<button class="nav-opcion">Opcion1</button>
+		<button class="nav-opcion">Opcion2</button>
+		<button class="nav-opcion">Opcion3</button>
+		<button class="nav-opcion">Opcion4</button>
 	</div>
+</header>
+
+<div class="content-container">
+	<form action="" method="get" class="formulario-escaneado">
+		<h2 style="left: 60px;">Solicitud de Interconsulta</h2>
+		<h3 style="left: 60px;">Datos Básicos</h3>
+		<div class="datos-formulario-escaneado">
+
+			<div class="info-label">
+				<label for="folio">FOLIO</label>
+				<input required type="text" id="folio" class="elemento-formulario" placeholder="9650459604">
+			</div>
+
+			<div class="info-label">
+				<label for="orden">NUMERO DE ORDEN</label>
+				<input required type="text" id="orden" class="elemento-formulario" placeholder="432869205839">
+			</div>
+
+			<div class="info-label">
+				<label for="numFicha">NUMERO DE FICHA</label>
+				<input required type="text" id="numFicha" class="elemento-formulario" placeholder="5434534546565">
+			</div>
+			<div class="info-label">
+				<label for="servicio">SERVICIO DE SALUD</label>
+				<input required type="text" id="servicio" class="elemento-formulario" placeholder="SS. Metropolitano Oriente">
+			</div>
+			<div class="info-label">
+				<label for="establecimiento">ESTABLECIMIENTO</label>
+				<input required type="text" id="establecimiento" class="elemento-formulario" placeholder="Hospital Sotero del Rio">
+			</div>
+			<div class="info-label">
+				<label for="fechaSolicitud">FECHA DE SOLICITUD</label>
+				<input required type="text" id="fechaSolicitud" class="elemento-formulario" placeholder="17-07-22">
+			</div>
+		</div>
+		<h3 style="left: 60px;">Datos del (de la) paciente</h3>
+		<div class="datos-formulario-escaneado">
+
+			<div class="info-label">
+				<label for="primerApellido">PRIMER APELLIDO</label>
+				<input required type="text" id="primerApellido" class="elemento-formulario" placeholder="Rio">
+			</div>
+
+			<div class="info-label">
+				<label for="segundoApellido">SEGUNDO APELLIDO</label>
+				<input required type="text" id="segundoApellido" class="elemento-formulario" placeholder="Cedeno">
+			</div>
+
+			<div class="info-label">
+				<label for="nombres">NOMBRES</label>
+				<input required type="text" id="nombres" class="elemento-formulario" placeholder="Kristian Alejandro">
+			</div>
+			<div class="info-label">
+				<label for="run">RUN</label>
+				<input required type="text" id="run" class="elemento-formulario" placeholder="26775712-K">
+			</div>
+			<div class="info-label">
+				<label for="sexo">SEXO</label>
+				<input required type="text" id="sexo" class="elemento-formulario" placeholder="Masculino">
+			</div>
+			<div class="info-label">
+				<label for="fechaNacimiento">FECHA DE NACIMIENTO</label>
+				<input required type="text" id="fechaNacimiento" class="elemento-formulario" placeholder="03-07-1998">
+			</div>
+			<div class="info-label">
+				<label for="edad">EDAD</label>
+				<input required type="text" id="edad" class="elemento-formulario" placeholder="25">
+			</div>
+			<div class="info-label">
+				<label for="domicilio">DOMICILIO</label>
+				<input required type="text" id="domicilio" class="elemento-formulario" placeholder="Vicuña">
+			</div>
+			<div class="info-label">
+				<label for="correo">CORREO ELECTRONICO</label>
+				<input required type="text" id="correo" class="elemento-formulario" placeholder="kristianrio97@gmail.com">
+			</div>
+			<div class="info-label">
+				<label for="comunaResidencia">COMUNA DE RESIDENCIA</label>
+				<input required type="text" id="comunaResidencia" class="elemento-formulario" placeholder="Santiago">
+			</div>
+			<div class="info-label">
+				<label for="telefonoMovil">TELEFONO MOVIL</label>
+				<input required type="text" id="telefonoMovil" class="elemento-formulario" placeholder="999725612">
+			</div>
+			<div class="info-label">
+				<label for="nombrePadre">NOMBRE PADRE</label>
+				<input required type="text" id="nombrePadre" class="elemento-formulario" placeholder="Victor Rio">
+			</div>
+			<div class="info-label">
+				<label for="nombreMadre">NOMBRE MADRE</label>
+				<input required type="text" id="nombreMadre" class="elemento-formulario" placeholder="Bernardita Cedeno">
+			</div>
+		</div>
+
+
+	</form>
+
+	<div class="datos-confirmacion-derecha">
+		<div class="pasos-digitador">
+			<div class="paso-left"></div>
+			<div class="paso-medio"></div>
+			<div class="paso-medio-highlight"></div>
+			<div class="paso-medio"></div>
+			<div class="paso-right"></div>
+		</div>
+		<h3 style="color: var(--negro); margin-top: -20px;">3. Confirmación de datos escaneado</h3>
+		<div class="instruccion">El documento se escaneó correctamente. Por favor, verifique que los datos registrados son correctos, y corrija los datos erróneos, antes de continuar.</div>
+		<div class="circulo-de-progreso" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-progress="0">
+
+		</div>
+
+		<h2 style="var(--negro)" id="camposCompletados">Campos completados: 0/0</h2>
+		<div class="instruccion">Múltiples campos no pudieron ser escaneados. Por favor verificar.</div>
+		<button type="submit" class="boton-estandar">FINALIZAR</button>
+	</div>
+</div>
 </body>
 </html>
