@@ -67,7 +67,7 @@ function evaluarArchivo() {
             }
         }
     }
-    alert('Please upload a valid PDF file without a password.');
+    alert('El archivo seleccionado no es del formato correcto. Por favor, seleccionar un archivo .PDF');
 }
 
 function tieneContrasena(file) {
