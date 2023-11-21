@@ -308,7 +308,6 @@ label {
 .porcentaje-pertinencia {
 	width: 188px;
 	height: 90px;
-	/* UI Properties */
 	color: var(--verdosoOscuro);
 	text-align: left;
 	font: normal normal normal 90px/126px var(--big-stuff);
@@ -319,7 +318,6 @@ label {
 .boton-radial{
 	width: 30px;
 	height: 30px;
-	/* UI Properties */
 	border: 2px solid var(--verdosoOscuro);
 	border-radius: 20px;
 	opacity: 1;
@@ -336,7 +334,7 @@ label {
 .radio-container {
 	display: flex;
 	align-items: self-start;
-	margin-bottom: 10px; /* Adjust as needed */
+	margin-bottom: 10px;
 }
 
 .seleccion-archivo {
@@ -366,4 +364,44 @@ input[type=file]::file-selector-button {
 
 input[type=file]::file-selector-button:hover {
 	background: var(--highlight);
+}
+
+.toda-la-pantalla {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--blanco);
+	padding: 20px;
+}
+
+.login-box {
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	width: 400px;
+}
+
+.login-box input {
+	width: 100%;
+	padding: 10px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+	font-size: 30px;
+}
+
+.login-box input[type="submit"] {
+	background-color: var(--verdosoOscuro);
+	border-radius: 10px;
+	color: white;
+	cursor: pointer;
+}
+
+.login-box input[type="submit"]:hover {
+	background-color: #45a049;
 }

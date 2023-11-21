@@ -75,3 +75,32 @@ function tieneContrasena(file) {
         Lo arreglaré, pero no ahora. Valoro mi salud mental :) */
     return false;
 }
+
+//Cosas de login
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.getElementById("loginForm");
+
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Lista previa de credenciales
+        const credentialsList = [
+            { username: "Warry", password: "gay" },
+            { username: "Kristian", password: "homosexual" }
+        ];
+        //Evaluación de credenciales
+        const validCredentials = credentialsList.some(cred =>
+            cred.username === username && cred.password === password
+        );
+
+        if (validCredentials) {
+            alert("Reconocido por el sistema correctamente.");
+            // Redirect or perform other actions for successful login
+        } else {
+            alert("Credenciales inválidas. Intente nuevamente.");
+            // Optionally, you can clear the input fields or take other actions
+        }
+    });
+});
