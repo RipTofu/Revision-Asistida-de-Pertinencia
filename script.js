@@ -52,6 +52,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     formularioEscaneado.addEventListener("input", updateProgress);
 
+    const finalizarButton = document.querySelector('.boton-estandar');
+    finalizarButton.addEventListener('click', function () {
+        const totalFields = document.querySelectorAll('.elemento-formulario:required').length;
+        const filledFields = document.querySelectorAll('.elemento-formulario:required:valid').length;
+
+        if (totalFields === filledFields) {
+            // Redirect to another site upon successful completion
+            window.location.href = "RevisionInteligente.html"; // Replace with your desired URL
+        } else {
+            alert("Complete todos los campos antes de finalizar.");
+        }
+    });
+
     updateProgress();
 });
 
@@ -103,10 +116,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (validCredentials) {
             alert("Reconocido por el sistema correctamente.");
-            // Redirect or perform other actions for successful login
+            window.location.href = "CargaDeArchivoSIC.html";
         } else {
             alert("Credenciales inválidas. Intente nuevamente.");
-            // Optionally, you can clear the input fields or take other actions
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const confirmarSeleccionButton = document.querySelector('.boton-estandar');
+    const radioButtons = document.querySelectorAll('.boton-radial');
+
+    confirmarSeleccionButton.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        const selectedValue = document.querySelector('input[name="radial-button"]:checked');
+
+        if (selectedValue) {
+            alert(`Usted ha determinado que la SIC es ${selectedValue.value}. Se enviarán las notificaciones correspondientes.`);
+        } else {
+            alert('Por favor, seleccione una opción antes de confirmar.');
         }
     });
 });
