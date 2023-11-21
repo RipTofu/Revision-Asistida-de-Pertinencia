@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log('updateProgress function called');
         const totalFields = document.querySelectorAll('.elemento-formulario:required').length;
         const filledFields = document.querySelectorAll('.elemento-formulario:required:valid').length;
+        const camposNoEscaneados = document.getElementById("campos-no-escaneados");
         console.log('Filled Fields:', filledFields);
         console.log('Total Fields:', totalFields);
         const percentage = (filledFields / totalFields) * 100;
@@ -42,6 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
         //Para la cantidad de campos completados. Se actualizan los campos totales cada frame también, qué tanto.
         document.getElementById("camposCompletados").innerHTML = `Campos completados: ${filledFields}/${totalFields}`;
 
+        if (totalFields === filledFields) {
+            camposNoEscaneados.style.display = 'none';
+        } else {
+            camposNoEscaneados.style.display = 'block';
+        }
     }
 
     formularioEscaneado.addEventListener("input", updateProgress);
